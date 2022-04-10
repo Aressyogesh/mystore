@@ -13,7 +13,7 @@
 	<link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
 	<link href='http://cdn.rawgit.com/extent-framework/extent-github-cdn/b65cd69/v3html/css/extent.css' type='text/css' rel='stylesheet' />
 	
-	<title>MyStoreProject</title>
+	<title>EQ2 - HEMSWEB</title>
 
 	<style type='text/css'>
 		/* json-tree */
@@ -31,7 +31,7 @@
 		var JSONTree=function(){var n={"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#x27;","/":"&#x2F;"},t=0,r=0;this.create=function(n,t){return r+=1,N(u(n,0,!1),{class:"jstValue"})};var e=function(t){return t.replace(/[&<>'"]/g,function(t){return n[t]})},s=function(){return r+"_"+t++},u=function(n,t,r){if(null===n)return f(r?t:0);switch(typeof n){case"boolean":return l(n,r?t:0);case"number":return i(n,r?t:0);case"string":return o(n,r?t:0);default:return n instanceof Array?a(n,t,r):c(n,t,r)}},c=function(n,t,r){var e=s(),u=Object.keys(n).map(function(r){return j(r,n[r],t+1,!0)}).join(m()),c=[g("{",r?t:0,e),N(u,{id:e}),p("}",t)].join("\n");return N(c,{})},a=function(n,t,r){var e=s(),c=n.map(function(n){return u(n,t+1,!0)}).join(m());return[g("[",r?t:0,e),N(c,{id:e}),p("]",t)].join("\n")},o=function(n,t){var r=e(JSON.stringify(n));return N(v(r,t),{class:"jstStr"})},i=function(n,t){return N(v(n,t),{class:"jstNum"})},l=function(n,t){return N(v(n,t),{class:"jstBool"})},f=function(n){return N(v("null",n),{class:"jstNull"})},j=function(n,t,r){var s=v(e(JSON.stringify(n))+": ",r),c=N(u(t,r,!1),{});return N(s+c,{class:"jstProperty"})},m=function(){return N(",\n",{class:"jstComma"})},N=function(n,t){return d("span",t,n)},d=function(n,t,r){return"<"+n+Object.keys(t).map(function(n){return" "+n+'="'+t[n]+'"'}).join("")+">"+r+"</"+n+">"},g=function(n,t,r){return N(v(n,t),{class:"jstBracket"})+N("",{class:"jstFold",onclick:"JSONTree.toggle('"+r+"')"})};this.toggle=function(n){var t=document.getElementById(n),r=t.parentNode,e=t.previousElementSibling;""===t.className?(t.className="jstHiddenBlock",r.className="jstFolded",e.className="jstExpand"):(t.className="",r.className="",e.className="jstFold")};var p=function(n,t){return N(v(n,t),{})},v=function(n,t){return Array(2*t+1).join(" ")+n};return this}();
 	</script>
 </head>
-	<body class='extent standard default hide-overflow '>
+	<body class='extent dark default hide-overflow '>
 		<div id='theme-selector' alt='Click to toggle theme. To enable by default, use theme configuration.' title='Click to toggle theme. To enable by default, use theme configuration.'>
 			<span><i class='material-icons'>desktop_windows</i></span>
 		</div>
@@ -44,17 +44,13 @@
 						<li class='waves-effect'><a href='#!' onclick="configureView(-1);chartsView('dashboard');" view='dashboard-view'><i class='material-icons'>track_changes</i></a></li>
 		</ul>
 		<!-- report name -->
-		<span class='report-name'>MyStoreProject Report
-         
-                <img src='http://localhost:8082/job/MyStoreProject/ws/MyStoreProject/Logo/MyStore.png'/>
-            
-        </span>
+		<span class='report-name'>HEMSWEB Test Automation Report</span>
 		<!-- report headline -->
 		<span class='report-headline'></span>
 		<!-- nav-right -->
 		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
 			<a href='#!'>
-			<span class='label blue darken-3 suite-start-time'>Apr 8, 2022 03:30:40 PM</span>
+			<span class='label blue darken-3 suite-start-time'>Apr 10, 2022 04:16:15 PM</span>
 			</a>
 		</ul>
 	</div>
@@ -69,8 +65,7 @@
 				<i class='material-icons'>warning</i> Status
 				</a>
 				<ul id='tests-toggle' class='dropdown-content'>
-										<li status='pass'><a href='#!'>Pass <i class='material-icons green-text'>check_circle</i></a></li>
-					<li status='fail'><a href='#!'>Fail <i class='material-icons red-text'>cancel</i></a></li>
+										<li status='fail'><a href='#!'>Fail <i class='material-icons red-text'>cancel</i></a></li>
 					<li class='divider'></li>
 					<li status='clear' clear='true'><a href='#!'>Clear Filters <i class='material-icons'>clear</i></a></li>
 				</ul>
@@ -113,10 +108,10 @@
                     <canvas id='parent-analysis' width='90' height='70'></canvas>
                 </div>
                 <div class='block text-small'>
-                    <span class='tooltipped' data-position='top' data-tooltip='50%'><span class='strong'>1</span> test(s) passed</span>
+                    <span class='tooltipped' data-position='top' data-tooltip='0%'><span class='strong'>0</span> test(s) passed</span>
                 </div>
                 <div class='block text-small'>
-                    <span class='strong tooltipped' data-position='top' data-tooltip='50%'>1</span> test(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
+                    <span class='strong tooltipped' data-position='top' data-tooltip='100%'>1</span> test(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
                 </div>
             </div>
         </div>
@@ -137,14 +132,14 @@
 				<li class='test displayed active  fail' status='fail' bdd='false' test-id='1'>
 					<div class='test-heading'>
 						<span class='test-name'>loginTest</span>
-						<span class='test-time'>Apr 8, 2022 03:31:15 PM</span>
+						<span class='test-time'>Apr 10, 2022 04:16:25 PM</span>
 						<span class='test-status right fail'>fail</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Apr 8, 2022 03:31:15 PM</span>
-	<span class='label end-time'>Apr 8, 2022 03:31:28 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 13s+160ms</span>
+	<span class='label start-time'>Apr 10, 2022 04:16:25 PM</span>
+	<span class='label end-time'>Apr 10, 2022 04:16:25 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+167ms</span>
 </div>
 <div class='test-steps'>
 	<table class='bordered table-results'>
@@ -158,7 +153,7 @@
 		<tbody>
 			<tr class='log' status='fail'>
 				<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
-				<td class='timestamp'>3:31:28 PM</td>
+				<td class='timestamp'>4:16:25 PM</td>
 				<td class='step-details'>
 						<span class='badge white-text red'>loginTest - Test Case Failed</span>
 					
@@ -166,53 +161,18 @@
 			</tr>
 			<tr class='log' status='fail'>
 				<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
-				<td class='timestamp'>3:31:28 PM</td>
+				<td class='timestamp'>4:16:25 PM</td>
 				<td class='step-details'>
-						<span class='badge white-text red'>java.lang.AssertionError: expected [http://automationpractice.com/index.php?controller=authentication] but found [http://automationpractice.com/index.php?controller=my-account] - Test Case Failed</span>
+						<span class='badge white-text red'>java.lang.NullPointerException: Cannot invoke "com.hemsweb.pageobjects.LoginPage.login(String, String, com.hemsweb.pageobjects.DashboardPage)" because "this.loginPage" is null - Test Case Failed</span>
 					
 				</td>
 			</tr>
 			<tr class='log' status='fail'>
 				<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
-				<td class='timestamp'>3:31:28 PM</td>
+				<td class='timestamp'>4:16:25 PM</td>
 				<td class='step-details'>
 						ScreenShot is Attached
-					<img class='r-img' onerror='this.style.display="none"' data-featherlight='http://localhost:8082/job/MyStoreProject/ws/MyStoreProject/ScreenShots/loginTest_04-08-2022 03:31:28.png' src='http://localhost:8082/job/MyStoreProject/ws/MyStoreProject/ScreenShots/loginTest_04-08-2022 03:31:28.png' data-src='http://localhost:8082/job/MyStoreProject/ws/MyStoreProject/ScreenShots/loginTest_04-08-2022 03:31:28.png'>
-				</td>
-			</tr>
-		</tbody>
-	</table>
-</div>
-					</div>
-				</li>
-				<li class='test displayed active  pass' status='pass' bdd='false' test-id='2'>
-					<div class='test-heading'>
-						<span class='test-name'>loginTest</span>
-						<span class='test-time'>Apr 8, 2022 03:31:45 PM</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-					<div class='test-content hide'>
-<div class='test-time-info'>
-	<span class='label start-time'>Apr 8, 2022 03:31:45 PM</span>
-	<span class='label end-time'>Apr 8, 2022 03:31:58 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 13s+395ms</span>
-</div>
-<div class='test-steps'>
-	<table class='bordered table-results'>
-		<thead>
-			<tr>
-				<th>Status</th>
-				<th>Timestamp</th>
-				<th>Details</th>
-			</tr>
-		</thead>
-		<tbody>
-			<tr class='log' status='pass'>
-				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-				<td class='timestamp'>3:31:58 PM</td>
-				<td class='step-details'>
-						Pass Test case is: loginTest
-					
+					<img class='r-img' onerror='this.style.display="none"' data-featherlight='http://localhost:8082/job/hemsweb/ws/hemsweb/ScreenShots/loginTest_04-10-2022 04:16:25.png' src='http://localhost:8082/job/hemsweb/ws/hemsweb/ScreenShots/loginTest_04-10-2022 04:16:25.png' data-src='http://localhost:8082/job/hemsweb/ws/hemsweb/ScreenShots/loginTest_04-10-2022 04:16:25.png'>
 				</td>
 			</tr>
 		</tbody>
@@ -248,7 +208,7 @@
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Tests
-					<div class='panel-lead'>2</div>
+					<div class='panel-lead'>1</div>
 				</div>
 			</div>
 			<div class='col s2'>
@@ -260,19 +220,19 @@
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Start
-					<div class='panel-lead'>Apr 8, 2022 03:30:40 PM</div>
+					<div class='panel-lead'>Apr 10, 2022 04:16:15 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
-			 		<div class='panel-lead'>Apr 8, 2022 03:31:59 PM</div>
+			 		<div class='panel-lead'>Apr 10, 2022 04:16:26 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Time Taken
-					<div class='panel-lead'>0h 1m 18s+773ms</div>
+					<div class='panel-lead'>0h 0m 10s+997ms</div>
 				</div>
 			</div>
 			<div class='col s4'>
@@ -286,15 +246,15 @@
 						</tr>
 							<tr>
 								<td>HostName</td>
-								<td>MyHost</td>
+								<td>Aress Software</td>
 							</tr>
 							<tr>
 								<td>ProjectName</td>
-								<td>MyStoreProject</td>
+								<td>HEMSWEB Automation</td>
 							</tr>
 							<tr>
-								<td>Tester</td>
-								<td>Hitendra</td>
+								<td>QA</td>
+								<td>Yogesh</td>
 							</tr>
 							<tr>
 								<td>OS</td>
@@ -315,8 +275,8 @@
 		<!-- container -->
 		<script>
 			var statusGroup = {
-                parentCount: 2,
-				passParent: 1,
+                parentCount: 1,
+				passParent: 0,
 				failParent: 1,
 				fatalParent: 0,
 				errorParent: 0,
@@ -347,7 +307,7 @@
 		</script>
 		<script>
 			var timeline = {
-			        "loginTest":13.16,"loginTest":13.395
+			        "loginTest":0.167
 			};
 		</script>
 		<script src='http://cdn.rawgit.com/extent-framework/extent-github-cdn/b65cd69/v3html/js/extent.js' type='text/javascript'></script>
